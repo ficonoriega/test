@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+    box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*-------------------------------------------------------------------------*/
+/*------------------------------------BODY---------------------------------*/
+
+body {
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #020617;
+    color: #cbd5e1;
+    font-family: 'Sora', sans-serif;
+    line-height: 1.5;
+    background-image: url("./assets/images/hero_img.jpg");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+    display: flex;
+    justify-content: space-between;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*-------------------------------------------------------------------------*/
+/*-----------------------------------PANELS--------------------------------*/
+
+.panel{
+    background-color: brown;
+    width: fit-content;
 }
+
+button{
+    all:unset;
+    color: inherit;
+}
+
+/*-------------------------------------------------------------------------*/
+/*---------------------------------RIGHTPANEL------------------------------*/
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------------RESPONSIVE CSS----------------------------*/
