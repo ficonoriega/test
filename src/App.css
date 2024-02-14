@@ -46,18 +46,54 @@ header {
 /*-------------------------------------------------------------------------*/
 /*-----------------------------------PANELS--------------------------------*/
 
-.panel{
-    background-color: brown;
-    width: fit-content;
-}
-
 button{
     all:unset;
-    color: inherit;
 }
 
-/*-------------------------------------------------------------------------*/
-/*---------------------------------RIGHTPANEL------------------------------*/
+hr{
+    width: 92%;
+    border: 1px solid #6c7280;
+}
+
+textarea{
+    resize: none;
+    background-color: #212433;
+    border: none;
+    width: 100%;
+}
+
+.content{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+    height: 50vh;
+}
+
+.panel{
+    border: 1px solid #6c7280;
+    width: 100%;
+    background-color: #212433;
+    color:#6c7280;
+    border-radius: 25px;
+}
+
+.languageButton{
+    all:unset;
+    color: inherit;
+    margin: 1vh;
+    padding: 1vh 2vh;
+    border-radius: 15px;
+}
+
+.languageButton:hover{
+    color: #cbd5e1;
+    background-color: #4d5562;
+}
+
+ul{
+    border: 10px;
+}
 
 /*-------------------------------------------------------------------------*/
 /*-------------------------------RESPONSIVE CSS----------------------------*/

@@ -5,9 +5,28 @@ import Expand from "../assets/images/Expand_down.svg"
 import Hotizontal from "../assets/images/Horizontal_top_left_main.svg"
 
 
-const RightPanel = () => {
+const Panels = () => {
     return(
-        <section className="panel">
+        <>
+            <section className="panel">
+                <nav>
+                    <button className="languageButton">Detect Language</button>
+                    <button className="languageButton">English</button>
+                    <button className="languageButton">French</button>
+                    <button className="languageButton">Spanish <img src={Expand} alt="Expand" /></button>
+                </nav>
+                <hr/>
+                <form>
+                    <textarea cols="50" rows="3"></textarea>
+                    <p id="letterCount">12/500</p>
+                </form>
+                <footer>
+                    <button><img src={Sound} alt="Sound" /></button>
+                    <button><img src={CopyImage} alt="Copy text" /></button>
+                    <button>Translate</button>
+                </footer>
+            </section>
+            <section className="panel">
             <ul>
                 <button className="languageButton">English</button>
                 <button className="languageButton">French</button>
@@ -24,7 +43,8 @@ const RightPanel = () => {
                 <button><img src={CopyImage} alt="Copy text" /></button>
             </footer>
         </section>
+        </>
     );
 }
 
-export default RightPanel
+export default Panels

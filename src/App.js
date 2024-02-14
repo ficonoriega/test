@@ -1,15 +1,11 @@
 import './App.css';
-import LeftPanel from './components/LeftPanel';
+import Panels from './components/Panels';
 
 function App() {
   return (
-    <section className='hero'>
-      <div className='content'>
-        <LeftPanel/>
-      </div>
-    </section>
-
-    
+  <div className='content'>
+    <Panels/>
+  </div>
   );
 }
 
