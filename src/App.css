@@ -52,22 +52,41 @@ button{
 
 hr{
     width: 92%;
-    border: 1px solid #6c7280;
+    border: 1px solid #373e4d;
+}
+
+ul{
+    border: 10px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    margin: 10px 10px;
 }
 
 textarea{
     resize: none;
     background-color: #212433;
     border: none;
-    width: 100%;
+    width: 92%;
+    color: #f9fbfb;
+    margin:10px 25px;
+    font-family: inherit;
+    font-size:90%;
+    font-weight: 500;
+}
+
+textarea:focus{
+    /* outline: none; */
 }
 
 .content{
     padding-top: 10vh;
     display: flex;
     justify-content: center;
-    gap: 5vh;
-    height: 50vh;
+    gap: 3vh;
+    height: 55vh;
 }
 
 .panel{
@@ -76,23 +95,42 @@ textarea{
     background-color: #212433;
     color:#6c7280;
     border-radius: 25px;
+    position: relative;
 }
 
-.languageButton{
-    all:unset;
-    color: inherit;
+.languageBtn{
+    color: #6c717f;
+    font-size:small;
+    font-weight: 600;
     margin: 1vh;
     padding: 1vh 2vh;
     border-radius: 15px;
 }
 
-.languageButton:hover{
+.languageBtn:hover{
     color: #cbd5e1;
     background-color: #4d5562;
 }
 
-ul{
-    border: 10px;
+.actionBtn{
+    position:relative;
+    border:2px solid #6c7280;
+    border-radius: 12px;
+    padding: 0.5vh 1vh;
+    margin: 1vh;
+    align-items: center;
+}
+
+.actionBtn img{
+    /* position:absolute; */
+    top: 50%;
+    transform: translate(-8%, -0.1%);
+}
+
+.translateBtn{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /*-------------------------------------------------------------------------*/
