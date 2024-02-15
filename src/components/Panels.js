@@ -14,7 +14,7 @@ const Panels = () => {
                     <button className="languageBtn">Detect Language</button>
                     <button className="languageBtn">English</button>
                     <button className="languageBtn">French</button>
-                    <button className="languageBtn">Spanish <img src={Expand} alt="Expand" /></button>
+                    <button className="languageBtn"><span>Spanish</span> <img src={Expand} alt="Expand" /></button>
                 </nav>
                 <hr/>
                 <form>
@@ -28,22 +28,22 @@ const Panels = () => {
                 </footer>
             </section>
             <section className="panel">
-            <ul>
-                <button className="languageBtn">English</button>
-                <button className="languageBtn">French</button>
-                <button className="languageBtn">Spanish <img src={Expand} alt="Expand" /></button>
-                <button className="actionBtn"><img src={Hotizontal} alt="Shift languages" /></button>
-            </ul>
-            <hr/>
-            <form>
-                <textarea cols="50" rows="3"></textarea>
-                <p id="letterCount">12/500</p>
-            </form>
-            <footer>
-                <button className="actionBtn"><img src={Sound} alt="Sound" /></button>
-                <button className="actionBtn"><img src={CopyImage} alt="Copy text" /></button>
-            </footer>
-        </section>
+                <nav>
+                    <button className="languageBtn">English</button>
+                    <button className="languageBtn">French</button>
+                    <button className="languageBtn">Spanish <img src={Expand} alt="Expand" /></button>
+                    <button className="actionBtn"><img src={Hotizontal} alt="Shift languages" /></button>
+                </nav>
+                <hr/>
+                <form>
+                    <textarea cols="50" rows="3"></textarea>
+                    <p id="letterCount">12/500</p>
+                </form>
+                <footer>
+                    <button className="actionBtn"><img src={Sound} alt="Sound" /></button>
+                    <button className="actionBtn"><img src={CopyImage} alt="Copy text" /></button>
+                </footer>
+            </section>
         </>
     );
 }

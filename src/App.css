@@ -50,6 +50,10 @@ button{
     all:unset;
 }
 
+button img{
+    vertical-align: middle;
+}
+
 hr{
     width: 92%;
     border: 1px solid #373e4d;
@@ -63,6 +67,20 @@ footer{
     position: absolute;
     bottom: 0;
     margin: 10px 10px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-end;
+    width: 90%;
+}
+
+nav{
+    position: relative;
+    margin: 2vh;
 }
 
 textarea{
@@ -108,8 +126,12 @@ textarea:focus{
 }
 
 .languageBtn:hover{
-    color: #cbd5e1;
+    color: #dee3e9;
     background-color: #4d5562;
+}
+
+.languageBtn:nth-of-type(4):active img{
+    transform : rotate(180deg);
 }
 
 .actionBtn{
@@ -121,16 +143,22 @@ textarea:focus{
     align-items: center;
 }
 
+.actionBtn:hover{
+    background-color: #1b1e20;
+}
+
 .actionBtn img{
-    /* position:absolute; */
     top: 50%;
     transform: translate(-8%, -0.1%);
 }
 
 .translateBtn{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-color: #3762e4;
+    color: #eef1f9;
+    padding: 1.5vh 3vh;
+    border: 1px solid #75a0e7;
+    border-radius: 10px;
+    top: -1vh;
 }
 
 /*-------------------------------------------------------------------------*/
